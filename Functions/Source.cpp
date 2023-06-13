@@ -1,7 +1,7 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 #ifdef DEBUG
-int Add(int a = 0, int b = 0, int c = 0); //объявление функции // b=0 - параметр по умолчанию, =0 - значение по умолчанию
+int Add(int a = 0, int b = 0, int c = 0); //РѕР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅРєС†РёРё // b=0 - РїР°СЂР°РјРµС‚СЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, =0 - Р·РЅР°С‡РµРЅРёРµ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 int Sub(int a, int b);
 int Mul(int a, int b);
 double Div(int a, double b);
@@ -17,8 +17,8 @@ void main()
 #ifdef DEBUG
 	cout << "Hello Functions" << endl;
 	int a, b;
-	cout << "Введите 2 числа "; cin >> a >> b;
-	int c = Add(a); // использование функции Function call
+	cout << "Р’РІРµРґРёС‚Рµ 2 С‡РёСЃР»Р° "; cin >> a >> b;
+	int c = Add(a); // РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ С„СѓРЅРєС†РёРё Function call
 	cout << a << "+" << b << " = " << c << endl;
 	cout << a << "-" << b << " = " << Sub(a, b) << endl;
 	cout << a << "*" << b << " = " << Mul(a, b) << endl;
@@ -27,20 +27,20 @@ void main()
 
 
 	int number;
-	cout << "Введите число: "; cin >> number;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> number;
 	int result = Factorial(number);
-	cout << "Факториал " << number << " = " << result << endl;
+	cout << "Р¤Р°РєС‚РѕСЂРёР°Р» " << number << " = " << result << endl;
 
 	int number_1;
 	int power;
-	cout << "Введите число: "; cin >> number_1;
-	cout << "Введите степень: "; cin >> power;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> number_1;
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ: "; cin >> power;
 	int result_1 = Power(number_1, power);
-	cout << "Число " << number_1 << " в степени " << power << " = " << result_1 << endl;
+	cout << "Р§РёСЃР»Рѕ " << number_1 << " РІ СЃС‚РµРїРµРЅРё " << power << " = " << result_1 << endl;
 }
 
 #ifdef DEBUG
-int Add(int a, int b, int c) //Addition - сложение // определение (реализация) функции
+int Add(int a, int b, int c) //Addition - СЃР»РѕР¶РµРЅРёРµ // РѕРїСЂРµРґРµР»РµРЅРёРµ (СЂРµР°Р»РёР·Р°С†РёСЏ) С„СѓРЅРєС†РёРё
 {
 	int sum = a + b + c;
 	return sum;
@@ -48,11 +48,11 @@ int Add(int a, int b, int c) //Addition - сложение // определение (реализация) ф
 int Sub(int a, int b)
 {
 	return a - b;
-	//Subtraction - вычитание
+	//Subtraction - РІС‹С‡РёС‚Р°РЅРёРµ
 }
 int Mul(int a, int b)
 {
-	//Multiplication-умножение
+	//Multiplication-СѓРјРЅРѕР¶РµРЅРёРµ
 	return a * b;
 }
 double Div(int a, double b)
