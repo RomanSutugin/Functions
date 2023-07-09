@@ -5,7 +5,7 @@
 #include"Sort.h"
 #include"Statistics.h"
 
-void main()
+/*void main()
 {
 	setlocale(LC_ALL, "Rus");
 	const int n = 10;
@@ -29,7 +29,7 @@ void main()
 	Sort(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
 
-}
+}*/
 
 
 
